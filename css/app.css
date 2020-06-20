@@ -116,7 +116,7 @@ body {
 .player-current-score { font-size: 30px; }
 
 button {
-    width: 100px;
+    width: 150px;
     height: 40px;
     border: none;
     outline: none;
@@ -135,15 +135,28 @@ button {
     align-items: center;
 }
 
-button i {
+.option-btn {
+    margin-right: 5px;
     color: #f50707;
-    font-size: 25px;
-    margin-right: 10px;
+    font-size: 20px;
     transition: margin .2s linear;
 }
 
-button:hover { color: #555; font-weight: bold; }
-button:hover i { margin-right: 20px; }
+button:hover { color: #555; }
+
+button:hover .option-btn { margin-right: 20px; }
+
+/* i.fas {
+    color: #f50707;
+    font-size: 25px;
+    margin-right: 10px;
+} */
+
+/* button:hover i.fas { 
+    color: #555; font-weight: bold;
+} */
+
+/* button:hover { margin-right: 20px; } */
 
 .btn-new { top: 25px; }
 .btn-roll { top: 290px; }
@@ -216,4 +229,3 @@ a:hover,
 a:active {
     color: #f50707;
 }
-
