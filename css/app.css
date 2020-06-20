@@ -1,14 +1,25 @@
 
-#clock {
+#clock,
+#showDate {
     position: absolute;
-    top: 60px;
     left: 5%;
     -webkit-transform: translate(-50% -50%);
     transform: translate(-50% -50%);
     color: #fff;
 }
 
-* {
+#clock {
+    top: 60px;
+}
+
+#showDate {
+    top: 200px;
+    font-size: 24px;
+}
+
+*,
+*::before,
+*::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -33,7 +44,7 @@ body {
     height: 100vh;
     color: #000;
     position: relative;
-    font-family: cursive;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
 }
 
@@ -71,7 +82,7 @@ body {
 
 .player-name {
     left: 30%;
-    top: 60px;
+    top: 65px;
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -187,3 +198,22 @@ button:hover i { margin-right: 20px; }
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { color: #f50707; font-weight: normal; }
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    -webkit-transform: translate(-50% -50%);
+    transform: translate(-50% -50%);
+    -webkit-transition: color .3s linear;
+    transition: color .3s linear;
+}
+
+a:hover,
+a:active {
+    color: #f50707;
+}
+

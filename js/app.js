@@ -1,6 +1,8 @@
 // Display clock
 displayClock();
 
+document.getElementById('showDate').textContent = displayDate();
+
 // Variables declaration
 var scores, activePlayer, currentScore, startGame;
 
@@ -131,5 +133,18 @@ function displayClock() {
     setInterval(function () {
         radialObj.value(new Date().getSeconds() + 1);
     }, 1000);
+}
 
+function displayDate () {
+    var date, d, m, y;
+    // create a date object
+    date = new Date();
+    d = date.getDate()
+    m = date.getMonth();
+    y = date.getFullYear();
+    // format with leading zero(0) including AM and PM
+    d = (d < 10) ? '0' + d : d;
+    m = (m < 10) ? '0' + m : m;
+    dateFormat = d + '-' + m + '-' + y;
+    return dateFormat;
 }
