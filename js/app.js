@@ -121,7 +121,7 @@ function displayClock() {
             // format with leading zero(0) including AM and PM
             hrs = (hrs < 10) ? '0' + hrs : hrs;
             mins = (mins < 10) ? '0' + mins : mins;
-            amPm = (hrs < 12) ? 'pm' : 'am';
+            amPm = (hrs < 12) ? 'am' : 'pm';
             hrs = hrs ? hrs : 12;
             timeFormat = hrs + ':' + mins + ' ' + amPm;
             return timeFormat;
