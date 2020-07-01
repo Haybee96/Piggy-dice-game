@@ -130,7 +130,7 @@ function displayClock() {
       mins = mins < 10 ? "0" + mins : mins;
       hrs = hrs ? hrs : 12;
       hrs = hrs % 12;
-      timeFormat = hrs + ":" + mins + " " + amPm;
+      timeFormat = hrs + ":" + mins;
       return timeFormat;
     },
   });
